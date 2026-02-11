@@ -10,7 +10,14 @@ const Navbar = () => {
         <li>Project</li>
       </ul>
 
-      <button className="btn-resume">Download PDF Resume</button>
+      <a
+        href="/CV_Faithza.pdf"
+        download="CV_Faithza_Mandolang.pdf"
+        className="btn-resume"
+        style={{ textDecoration: "none", display: "inline-block" }}
+      >
+        Download PDF Resume
+      </a>
     </nav>
   );
 };
