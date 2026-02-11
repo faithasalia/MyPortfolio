@@ -34,7 +34,7 @@ const ContactMe = () => {
       );
   };
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="section-header">
         <h2 className="section-title">Contact Me</h2>
         <span className="section-number">( 05 )</span>

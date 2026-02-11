@@ -126,21 +126,55 @@
 }
 
 /* Responsif */
+/* --- Penyesuaian Responsif Terpadu --- */
 @media (max-width: 968px) {
+  .contact-section {
+    padding: 60px 5% 80px;
+  }
+
+  .section-title {
+    font-size: 2.5rem; /* Menyamakan dengan komponen lain yang sudah responsif */
+  }
+
   .contact-container {
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
   }
+
+  .contact-form {
+    gap: 30px; /* Memperkecil jarak antar baris form */
+  }
+
   .form-row {
     flex-direction: column;
+    gap: 30px;
   }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem; /* Sedikit lebih kecil agar pas di layar mobile */
+  }
+
   .contact-info-sidebar {
     height: auto;
     align-items: center;
     text-align: center;
+    gap: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #eee; /* Memberi pemisah visual di mobile */
   }
+
   .social-links,
   .direct-contact {
     align-items: center;
+  }
+
+  .social-links a {
+    font-size: 1.2rem;
+  }
+
+  .btn-send {
+    width: 100%; /* Tombol memenuhi lebar layar di mobile */
+    text-align: center;
   }
 }

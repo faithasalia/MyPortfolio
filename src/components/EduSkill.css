@@ -114,8 +114,53 @@
 }
 
 /* Responsif */
+/* --- Penyesuaian Responsif Terpadu --- */
 @media (max-width: 1024px) {
   .edu-skills-container {
-    flex-direction: column;
+    flex-direction: column; /* Tumpuk Pendidikan dan Skill secara vertikal */
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edu-skills-section {
+    padding: 60px 5%;
+  }
+
+  .edu-name {
+    font-size: 1.25rem; /* Perkecil ukuran teks institusi */
+  }
+
+  .edu-desc {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  /* Grid Skill lebih fleksibel di mobile */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 20px 10px;
+  }
+
+  .skill-icon-box {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Tetap 2 kolom di layar sangat kecil */
+  }
+
+  .edu-item {
+    gap: 15px;
   }
 }

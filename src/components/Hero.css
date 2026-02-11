@@ -107,20 +107,41 @@
 }
 
 /* Responsif untuk Mobile */
+/* Responsif untuk Mobile */
 @media (max-width: 968px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
-    padding-top: 40px;
+    padding: 40px 5% 60px; /* Tambah padding bawah agar tidak menempel */
+    gap: 30px; /* Perkecil gap antar elemen */
+    min-height: auto; /* Biarkan tinggi menyesuaikan konten */
   }
+
   .hero-title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Perkecil font agar tidak terpotong (overflow) */
+    letter-spacing: -1px;
   }
+
+  .hero-desc {
+    font-size: 1rem;
+    margin: 20px auto 0; /* Center deskripsi */
+    max-width: 100%;
+  }
+
   .hero-footer {
-    justify-content: center;
+    flex-direction: column; /* Tumpuk email dan telepon secara vertikal */
+    gap: 15px;
+    align-items: center;
   }
+
   .hero-image-container {
     justify-content: center;
-    order: -1;
+    order: -1; /* Gambar tetap muncul di atas teks pada mobile */
+    width: 100%;
+  }
+
+  .image-wrapper {
+    max-width: 280px; /* Perkecil ukuran gambar profil di mobile */
+    border-radius: 30px; /* Sesuaikan lengkungan */
   }
 }

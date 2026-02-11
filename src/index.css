@@ -22,6 +22,20 @@ a:hover {
   color: #535bf2;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* Mengunci scroll horizontal agar tidak ada space hitam */
+  margin: 0;
+  padding-top: 60px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+}
+
 body {
   margin: 0;
   display: flex;

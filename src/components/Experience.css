@@ -122,15 +122,79 @@
   max-width: 600px;
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-  .timeline-item {
-    flex-direction: column;
+/* --- Penyesuaian Responsif Terpadu --- */
+
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 3rem; /* Perkecil sedikit di tablet */
   }
+
   .timeline-middle {
-    display: none; /* Sembunyikan garis di mobile agar lebih clean */
+    width: 60px; /* Perkecil jarak garis tengah */
   }
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
   .section-title {
     font-size: 2.5rem;
+  }
+
+  .timeline-item {
+    flex-direction: column; /* Tumpuk konten secara vertikal */
+    min-height: auto;
+    padding-bottom: 40px;
+    position: relative;
+    padding-left: 30px; /* Beri ruang untuk garis di sisi kiri */
+  }
+
+  /* Ubah garis tengah menjadi garis di sisi kiri untuk mobile */
+  .timeline-middle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    display: flex; /* Tetap tampilkan garis agar estetik */
+  }
+
+  .dot-outer {
+    width: 18px;
+    height: 18px;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .exp-year {
+    font-size: 1.8rem;
+  }
+
+  .exp-role {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .exp-company {
+    font-size: 1.2rem;
+  }
+
+  .exp-desc {
+    font-size: 1rem;
+  }
+
+  .company-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
   }
 }

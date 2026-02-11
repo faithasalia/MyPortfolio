@@ -30,7 +30,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="experience-section">
+    <section id="experience" className="experience-section">
       <div className="section-header">
         <h2 className="section-title">Experience</h2>
         <span className="section-number">( 02 )</span>

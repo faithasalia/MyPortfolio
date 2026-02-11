@@ -59,7 +59,7 @@ const EducationSkills = () => {
   ];
 
   return (
-    <section className="edu-skills-section">
+    <section id="skills" className="edu-skills-section">
       <div className="section-header">
         <h2 className="section-title">Education & Skills</h2>
         <span className="section-number">( 03 )</span>

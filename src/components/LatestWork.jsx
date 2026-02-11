@@ -29,7 +29,7 @@ const LatestWorks = () => {
   ];
 
   return (
-    <section className="works-section">
+    <section id="project" className="works-section">
       <div className="section-header">
         <h2 className="section-title">Latest Works</h2>
         <span className="section-number">( 04 )</span>

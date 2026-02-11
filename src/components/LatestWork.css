@@ -96,12 +96,51 @@
   margin-top: 5px;
 }
 
-/* Responsif Mobile */
-@media (max-width: 768px) {
+/* --- Penyesuaian Responsif Terpadu --- */
+
+@media (max-width: 1024px) {
   .works-grid {
-    grid-template-columns: 1fr; /* Jadi satu kolom di mobile */
+    grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom di Tablet */
+    gap: 20px;
   }
+  
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-section {
+    padding: 60px 5%;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr; /* Menjadi 1 kolom di Mobile */
+    gap: 30px;
+  }
+
+  .work-image-container {
+    aspect-ratio: 16/9; /* Ubah rasio agar lebih lebar di mobile */
+  }
+
   .work-title {
     font-size: 1.5rem;
+  }
+  
+  /* Pastikan pesan private project terbaca jelas di mobile */
+  .private-message {
+    font-size: 0.9rem;
+    padding: 6px 12px;
   }
 }
