@@ -1,0 +1,146 @@
+.contact-section {
+  padding: 80px 5%;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  padding-bottom: 120px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form-row {
+  display: flex;
+  gap: 40px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #ff5722;
+}
+
+.btn-send {
+  width: fit-content;
+  padding: 12px 25px;
+  border: 2px solid #ff5722;
+  background: transparent;
+  color: #ff5722;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-send:hover {
+  background-color: #ff5722;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 87, 34, 0.2);
+  border-color: #ff5722;
+}
+
+/* Sidebar Info */
+.contact-info-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; /* Menyesuaikan tinggi form agar sejajar */
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1a1a1a;
+}
+
+.direct-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.contact-box {
+  text-align: right;
+}
+
+.contact-link {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+  color: #888;
+}
+.contact-link:hover {
+  color: #1a1a1a;
+}
+
+/* Responsif */
+@media (max-width: 968px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .form-row {
+    flex-direction: column;
+  }
+  .contact-info-sidebar {
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .social-links,
+  .direct-contact {
+    align-items: center;
+  }
+}

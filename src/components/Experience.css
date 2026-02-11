@@ -1,0 +1,136 @@
+.experience-section {
+  padding: 80px 5%;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+/* Reusing header style from About Me */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.section-number {
+  font-size: 1.2rem;
+  color: #ff5722;
+  font-weight: 700;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Gap diatur oleh padding timeline-item */
+}
+
+.timeline-item {
+  display: flex;
+  min-height: 180px;
+}
+
+.timeline-left {
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+.exp-year {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.exp-role {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.timeline-middle {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dot-outer {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 2;
+}
+
+/* Dot oranye aktif */
+.timeline-item:last-child .dot-inner {
+  width: 10px;
+  height: 10px;
+  background-color: #ff5722;
+  border-radius: 50%;
+}
+
+.line {
+  width: 2px;
+  background-color: #eee;
+  flex-grow: 1;
+  position: absolute;
+  top: 24px; /* Mulai dari bawah dot */
+  bottom: 0;
+}
+
+.timeline-right {
+  flex: 2;
+  padding-bottom: 60px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.exp-company {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.exp-type {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.exp-desc {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+  .timeline-middle {
+    display: none; /* Sembunyikan garis di mobile agar lebih clean */
+  }
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
