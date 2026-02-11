@@ -14,8 +14,8 @@ const Hero = () => {
         </div>
 
         <p className="hero-desc">
-          I build high-performance web applications and intelligent systems.
-          Focused on delivering clean code and innovative user experiences.
+          A Full Stack Developer and Deep Learning Engineer enthusiast who
+          enjoys turning ideas into functional, user-friendly web applications.
         </p>
 
         <div className="hero-footer">
