@@ -34,7 +34,7 @@ const EducationSkills = () => {
     {
       name: "Flask",
       rating: 4,
-      icon: "https://www.svgrepo.com/show/508915/flask.svg",
+      icon: "https://icon.icepanel.io/Technology/png-shadow-512/Flask.png",
     },
     {
       name: "FastAPI",
