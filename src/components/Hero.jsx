@@ -32,7 +32,7 @@ const Hero = () => {
 
       <div className="hero-image-container">
         <div className="image-wrapper">
-          <img src="public/assets/profile.jpeg" alt="Faithza Mandolang" />
+          <img src="assets/profile.jpeg" alt="Faithza Mandolang" />
         </div>
       </div>
     </section>
