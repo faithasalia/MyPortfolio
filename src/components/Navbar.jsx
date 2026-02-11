@@ -11,7 +11,7 @@ const Navbar = () => {
       </ul>
 
       <a
-        href="CV_Faithza.pdf"
+        href="/assets/Faithza Mandolang-CV.pdf"
         download="CV_Faithza_Mandolang.pdf"
         className="btn-resume"
         style={{ textDecoration: "none", display: "inline-block" }}
